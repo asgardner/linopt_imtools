@@ -93,7 +93,7 @@ errno_t linopt_compute_1Dfit(const char *fnamein,
     float SVDeps = 0.0000001;
 
     imageID IDout, IDout0;
-    double  val, vale, err;
+    double  val, vale, err = 0.0;
 
     long  NBiter = 100;
     float gain   = 1.0;

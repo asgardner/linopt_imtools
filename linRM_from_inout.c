@@ -5,7 +5,10 @@
 #include "COREMOD_iofits/savefits.h"
 
 #include "compute_SVDpseudoInverse.h"
+
+#ifdef HAVE_CUDA
 #include "cudacomp/magma_compute_SVDpseudoInverse.h"
+#endif
 
 // Local variables pointers
 static char *inputimname;

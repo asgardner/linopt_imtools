@@ -8,7 +8,10 @@
 
 #include "COREMOD_iofits/savefits.h"
 #include "CommandLineInterface/timeutils.h"
+
+#ifdef HAVE_CUDA
 #include "cudacomp/cudacomp.h"
+#endif
 
 // Local variables pointers
 static char   *inimname;
